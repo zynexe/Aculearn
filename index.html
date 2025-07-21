@@ -5,38 +5,82 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aculearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="app">
-      <header>
-        <h1>Welcome to Aculearn</h1>
-        <p>Your learning journey starts here!</p>
-      </header>
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <span class="logo-text">Aculearn</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Features</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">FAQ</a></li>
+          </ul>
+          <button class="nav-cta-btn">Try for Free</button>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-subtitle">Master Your Knowledge with AI</h1>
+            <h2 class="hero-title">ACULEARN.</h2>
+            <button id="get-started-btn" class="hero-cta-btn">Try for Free</button>
+          </div>
+          <div class="hero-decorations">
+            <div class="decoration-circle decoration-1"></div>
+            <div class="decoration-circle decoration-2"></div>
+            <div class="decoration-circle decoration-3"></div>
+          </div>
+        </div>
+      </section>
       
-      <main>
-        <section class="hero">
-          <h2>Get Started</h2>
-          <p>This is a basic Vite project with HTML, CSS, and JavaScript.</p>
-          <button id="get-started-btn" class="btn">Get Started</button>
-        </section>
-        
-        <section class="features">
-          <div class="feature-card">
-            <h3>Feature 1</h3>
-            <p>Description of your first feature</p>
+      <!-- Features Section -->
+      <section class="features">
+        <div class="features-container">
+          <h2 class="features-title">Our Features.</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M9 9h6v6H9z" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Personalized Weakness Detection</h3>
+              <p>Discover exactly where you need to focus. Aculearn's AI analyzes your performance and highlights the topics that need improvement, giving you a clear roadmap to success.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Comprehensive Topic Analytics</h3>
+              <p>Get in-depth insights into your strengths and weaknesses. Visualize your progress through intuitive dashboards tailored to your learning goals.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Tailored Learning Recommendations</h3>
+              <p>Never waste time studying the wrong material. Aculearn recommends the most relevant resources to help you strengthen weak areas and master your subjects efficiently.</p>
+            </div>
           </div>
-          <div class="feature-card">
-            <h3>Feature 2</h3>
-            <p>Description of your second feature</p>
-          </div>
-          <div class="feature-card">
-            <h3>Feature 3</h3>
-            <p>Description of your third feature</p>
-          </div>
-        </section>
-      </main>
-      
-      <footer>
+        </div>
+      </section>
+
+      <footer class="footer">
         <p>&copy; 2025 Aculearn. Built with Vite.</p>
       </footer>
     </div>
